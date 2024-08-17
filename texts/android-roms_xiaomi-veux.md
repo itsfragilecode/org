@@ -27,9 +27,9 @@ gpg --verify PixelOS_veux*.zip.asc
 
 Make sure to get our signing keys from our GitHub org!
 
-The itsfragilecode project's signing keys are always published on the org's page at <https://github.com/itsfragilecode/>.
+The itsfragilecode project's signing keys are always published on the org's repository at <https://github.com/itsfragilecode/org>.
 
-Latest PGP public key: <https://gist.github.com/spezifisch/d06b1bd9b64a2becceb16f94ab942c6c> (2024-08)
+Latest PGP public key: <https://raw.githubusercontent.com/itsfragilecode/org/8007e8cae854c57c34e526eac572b0c88635b54e/pgp_public_key_59424FA392CDC913D54A90990A6EE2F8529283F2.asc> (2024-08)
 
 You need to import this key before you can verify your files, using GnuPG:
 
