@@ -1,5 +1,7 @@
 # itsfragilecode android roms for veux
 
+*it's fragile code.*
+
 Releases by: <https://github.com/itsfragilecode/>
 
 ## Disclaimer
@@ -36,7 +38,7 @@ gpg --verify *.zip.asc
 
 The itsfragilecode project's signing keys are always published on the org's repository at <https://github.com/itsfragilecode/org>.
 
-Latest PGP public key: <https://raw.githubusercontent.com/itsfragilecode/org/8007e8cae854c57c34e526eac572b0c88635b54e/pgp_public_key_59424FA392CDC913D54A90990A6EE2F8529283F2.asc> (2024-08)
+Latest PGP public key: [2024-08](https://raw.githubusercontent.com/itsfragilecode/org/8007e8cae854c57c34e526eac572b0c88635b54e/pgp_public_key_59424FA392CDC913D54A90990A6EE2F8529283F2.asc).
 
 You need to import this key before you can verify your files, using GnuPG:
 
@@ -46,7 +48,7 @@ gpg --import /path/to/downloaded/public-key.asc
 
 ## Source Code
 
-Manifest: <https://github.com/itsfragilecode/manifest>
+Manifest: <https://github.com/itsfragilecode/android> (based on LineageOS)
 
-Everything linked from the manifest is published at (itsfragilecode's GitHub org)[https://github.com/itsfragilecode/].
+Everything linked from the manifest is published at [itsfragilecode's GitHub org](https://github.com/itsfragilecode/).
 
