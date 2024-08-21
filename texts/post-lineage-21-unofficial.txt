@@ -1,0 +1,57 @@
+[B]Testers needed![/B]
+
+LineageOS is a free, community built, aftermarket firmware distribution of Android 14, which is designed to increase performance and reliability over stock Android for your device.
+
+LineageOS is based on the Android Open Source Project with extra contributions from many people within the Android community. It can be used without any need to have any Google application installed. Linked below is a package that has come from another Android project that restore the Google parts. LineageOS does still include various hardware-specific code, which is also slowly being open-sourced anyway.
+
+All the source code for LineageOS is available in the LineageOS Github repo. And if you would like to contribute to LineageOS, please visit out Gerrit Code Review. You can also view the Changelog for a full list of changes & features.
+
+[CODE]/*
+*
+* Your warranty is now void.
+*
+* I am not responsible for bricked devices, dead SD cards,
+* thermonuclear war, or you getting fired because the alarm app failed. Please
+* do some research if you have any concerns about features included in this ROM
+* before flashing it! YOU are choosing to make these modifications, and if
+* you point the finger at me for messing up your device, I will laugh at you.
+*
+*/[/CODE]
+
+[B]Current build:[/B]
+20240821
+
+[B]Latest downloads:[/B]
+[URL unfurl="true"]https://sourceforge.net/projects/itsfragilecode/files/android-roms/xiaomi-veux/[/URL]
+
+[B]Beware:[/B]
+This is marked [I]unstable[/I] for a reason. It works well for me but I'm the only tester right now.
+
+[B]Goals:[/B]
+This ROM started as a personal build to get the latest Security Patch Levels integrated.
+But as there are no current unofficial LineageOS build here I want to bridge this gap.
+
+[B]Known Issues:[/B]
+[LIST]
+[*]Lineage Camera only selects main camera
+[/LIST]
+
+[B]Instructions:[/B]
+[QUOTE]
+Wipe data & factory reset from LineageOS recovery.
+Flash the lineage-*.zip, then MindTheGApps on top if you want to.
+Restart and enjoy.
+[/QUOTE]
+
+[B]Sources:[/B]
+Manifest: [URL]https://github.com/itsfragilecode/android[/URL] (branch veux)
+Hardware tree: [URL]https://github.com/itsfragilecode/android_hardware_xiaomi[/URL] (currently equal to Lineage official)
+Device tree: [URL]https://github.com/itsfragilecode/device_xiaomi_veux[/URL] (based on PixelOS with changes to make it more "vanilla Lineage")
+Vendor tree: [URL]https://github.com/itsfragilecode/vendor_xiaomi_veux[/URL] (based on PixelOS)
+Kernel: [URL]https://github.com/itsfragilecode/kernel_xiaomi_sm6375[/URL] (PixelOS, also dtbo.img from PixelOS)
+
+Thanks to [USER=8538037]@Ramyski[/USER] for the device trees, @JaswalAshish, [USER=1077833]@deepongi[/USER], the [URL='https://pixelos.net/']PixelOS[/URL] project, [USER=12752366]@aswinop[/USER], and of course everyone else in the commit logs.
+
+
+Issue tracker for [B]problems & bug reports:[/B] [URL]https://github.com/itsfragilecode/org/issues[/URL] (if you have a GitHub account, otherwise just in this thread I guess).
+Please report any issues or bugs you encounter to help improve the ROM.
