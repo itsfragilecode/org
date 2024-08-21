@@ -31,17 +31,29 @@ This is marked [I]unstable[/I] for a reason. It works well for me but I'm the on
 This ROM started as a personal build to get the latest Security Patch Levels integrated.
 But as there are no current unofficial LineageOS builds here I want to bridge this gap.
 
-[URL='https://github.com/itsfragilecode/org/issues/1'][B]Known Issues[/B][/URL] (click for progress tracker)[B]:[/B]
+[URL='https://github.com/itsfragilecode/org/issues/1'][B]Known Issues[/B][/URL] (click for more often updated progress tracker)[B]:[/B]
 [LIST]
 [*]Build is not signed yet (WIP)
-[*]Only main camera working
+[*]Camera app shows only one camera -> Workaround: Use [I]MGC_9.2.113_A11_V22_snap.apk[/I] instead (modded GCam).
 [/LIST]
 
 [B]Instructions:[/B]
 [QUOTE]
-Wipe data & factory reset from LineageOS recovery.
-Flash the lineage-*.zip, then MindTheGApps on top if you want to.
-Restart and enjoy.
+[B]Flashing[/B]:
+[LIST]
+[*]Wipe data & factory reset from LineageOS recovery.
+[*]Flash the lineage-*.zip, then MindTheGApps on top if you want to.
+[*]Restart and enjoy.
+[/LIST]
+
+[B]For SafetyNet/PlayIntegrity[/B]:
+[LIST]
+[*]Flash [URL='https://topjohnwu.github.io/Magisk/install.html']Magisk[/URL] (27.0 works) apk like an update.zip via recovery.
+[*]Reboot
+[*]Run Magisk app, do full Magisk installation (choose recommended way)
+[*]Configure Zygisk, DenyList, Hide Magisk App.
+[*]Download and install PlayIntegrity[B]Fork[/B] Magisk module: [URL]https://github.com/osm0sis/PlayIntegrityFork[/URL]
+[/LIST]
 [/QUOTE]
 
 [B]Sources:[/B]
