@@ -4,7 +4,7 @@ LineageOS is a free, community built, aftermarket firmware distribution of Andro
 
 LineageOS is based on the Android Open Source Project with extra contributions from many people within the Android community. It can be used without any need to have any Google application installed. Linked below is a package that has come from another Android project that restore the Google parts. LineageOS does still include various hardware-specific code, which is also slowly being open-sourced anyway.
 
-All the source code for LineageOS is available in the LineageOS Github repo. And if you would like to contribute to LineageOS, please visit out Gerrit Code Review. You can also view the Changelog for a full list of changes & features.
+All the source code for LineageOS is available in the LineageOS Github repo. And if you would like to contribute to LineageOS, please visit our Gerrit Code Review. You can also view the Changelog for a full list of changes & features.
 
 [CODE]/*
 *
@@ -29,11 +29,12 @@ This is marked [I]unstable[/I] for a reason. It works well for me but I'm the on
 
 [B]Goals:[/B]
 This ROM started as a personal build to get the latest Security Patch Levels integrated.
-But as there are no current unofficial LineageOS build here I want to bridge this gap.
+But as there are no current unofficial LineageOS builds here I want to bridge this gap.
 
-[B]Known Issues:[/B]
+[URL='https://github.com/itsfragilecode/org/issues/1'][B]Known Issues[/B][/URL] (click for progress tracker)[B]:[/B]
 [LIST]
-[*]Lineage Camera only selects main camera
+[*]Build is not signed yet (WIP)
+[*]Only main camera working
 [/LIST]
 
 [B]Instructions:[/B]
@@ -50,8 +51,9 @@ Device tree: [URL]https://github.com/itsfragilecode/device_xiaomi_veux[/URL] (ba
 Vendor tree: [URL]https://github.com/itsfragilecode/vendor_xiaomi_veux[/URL] (based on PixelOS)
 Kernel: [URL]https://github.com/itsfragilecode/kernel_xiaomi_sm6375[/URL] (PixelOS, also dtbo.img from PixelOS)
 
-Thanks to [USER=8538037]@Ramyski[/USER] for the device trees, @JaswalAshish, [USER=1077833]@deepongi[/USER], the [URL='https://pixelos.net/']PixelOS[/URL] project, [USER=12752366]@aswinop[/USER], and of course everyone else in the commit logs.
+[B]Thanks[/B] to [USER=8538037]@Ramyski[/USER] for the device trees, @JaswalAshish, [USER=1077833]@deepongi[/USER], the [URL='https://pixelos.net/']PixelOS[/URL] project, [USER=12752366]@aswinop[/USER], and of course everyone else in the commit logs.
 
 
 Issue tracker for [B]problems & bug reports:[/B] [URL]https://github.com/itsfragilecode/org/issues[/URL] (if you have a GitHub account, otherwise just in this thread I guess).
-Please report any issues or bugs you encounter to help improve the ROM.
+
+[B]Please report any issues or bugs you encounter to help improve the ROM.[/B]
