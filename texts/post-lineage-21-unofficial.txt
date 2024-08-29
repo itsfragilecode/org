@@ -1,10 +1,10 @@
-[B]Testers needed![/B]
+[IMG]https://xdaforums.com/attachments/397541-jpeg.5814669/[/IMG]
 
 LineageOS is a free, community built, aftermarket firmware distribution of Android 14, which is designed to increase performance and reliability over stock Android for your device.
 
 LineageOS is based on the Android Open Source Project with extra contributions from many people within the Android community. It can be used without any need to have any Google application installed. Linked below is a package that has come from another Android project that restore the Google parts. LineageOS does still include various hardware-specific code, which is also slowly being open-sourced anyway.
 
-All the source code for LineageOS is available in the LineageOS Github repo. And if you would like to contribute to LineageOS, please visit our Gerrit Code Review. You can also view the Changelog for a full list of changes & features.
+All the source code for LineageOS is available in the LineageOS [URL='https://github.com/LineageOS']Github[/URL] repo. And if you would like to contribute to LineageOS, please visit our [URL='https://review.lineageos.org/']Gerrit Code Review[/URL]. You can also view the Changelog for a full list of changes & features.
 
 [CODE]/*
 *
@@ -18,53 +18,45 @@ All the source code for LineageOS is available in the LineageOS Github repo. And
 *
 */[/CODE]
 
-[B]Current build:[/B]
-20240821
+[B]Current build: [COLOR=rgb(26, 188, 156)]20240829[/COLOR]
 
-[B]Latest downloads:[/B]
+Instructions:
+
+1. Latest download:[/B]
 [URL unfurl="true"]https://sourceforge.net/projects/itsfragilecode/files/android-roms/xiaomi-veux/[/URL]
-
-[B]Beware:[/B]
-This is marked [I]unstable[/I] for a reason. It works well for me but I'm the only tester right now.
-
-[B]Goals:[/B]
-This ROM started as a personal build to get the latest Security Patch Levels integrated.
-But as there are no current unofficial LineageOS builds here I want to bridge this gap.
-
-[URL='https://github.com/itsfragilecode/org/issues/1'][B]Known Issues[/B][/URL] (click for more often updated progress tracker)[B]:[/B]
 [LIST]
-[*]Build is not signed yet (WIP)
-[*]Camera app shows only one camera -> Workaround: Use [I]MGC_9.2.113_A11_V22_snap.apk[/I] instead (modded GCam).
+[*]Get latest lineage-*.zip.
+[*]Get latest boot.img if you do not yet have a working recovery.
 [/LIST]
 
-[B]Instructions:[/B]
-[QUOTE]
-[B]Flashing[/B]:
+[B]2. Flashing[/B]:
 [LIST]
-[*]Wipe data & factory reset from LineageOS recovery.
-[*]Flash the lineage-*.zip, then MindTheGApps on top if you want to.
-[*]Restart and enjoy.
+[*]Wipe data & factory reset from LineageOS recovery. If you don't have a working custom recovery yet, flash boot.img from our Download section ([I]fastboot flash boot boot.img[/I]) and then reboot into recovery.
+[*]Flash the lineage-*.zip, then MindTheGApps 14 on top if you want to.
+[*]Restart, wait until it's booted, enjoy.
 [/LIST]
 
-[B]For SafetyNet/PlayIntegrity[/B]:
+[B]3. Passing SafetyNet/PlayIntegrity[/B]:
 [LIST]
+[*]Complete the initial boot.
 [*]Flash [URL='https://topjohnwu.github.io/Magisk/install.html']Magisk[/URL] (27.0 works) apk like an update.zip via recovery.
 [*]Reboot
-[*]Run Magisk app, do full Magisk installation (choose recommended way)
+[*]Run Magisk app, do full Magisk installation (choose recommended way), follow the reboots until Magisk is fully installed.
 [*]Configure Zygisk, DenyList, Hide Magisk App.
 [*]Download and install PlayIntegrity[B]Fork[/B] Magisk module: [URL]https://github.com/osm0sis/PlayIntegrityFork[/URL]
+[*]Do DenyList setup (look elsewhere what to block; at least e.g. Google Play Services Framework, Google Play, Google Wallet and your problematic apps.
 [/LIST]
-[/QUOTE]
 
+[QUOTE]
 [B]Sources:[/B]
 Manifest: [URL]https://github.com/itsfragilecode/android[/URL] (branch veux)
 Hardware tree: [URL]https://github.com/itsfragilecode/android_hardware_xiaomi[/URL] (currently equal to Lineage official)
 Device tree: [URL]https://github.com/itsfragilecode/device_xiaomi_veux[/URL] (based on PixelOS with changes to make it more "vanilla Lineage")
 Vendor tree: [URL]https://github.com/itsfragilecode/vendor_xiaomi_veux[/URL] (based on PixelOS)
 Kernel: [URL]https://github.com/itsfragilecode/kernel_xiaomi_sm6375[/URL] (PixelOS, also dtbo.img from PixelOS)
+[/QUOTE]
 
 [B]Thanks[/B] to [USER=8538037]@Ramyski[/USER] for the device trees, @JaswalAshish, [USER=1077833]@deepongi[/USER], the [URL='https://pixelos.net/']PixelOS[/URL] project, [USER=12752366]@aswinop[/USER], and of course everyone else in the commit logs.
-
 
 Issue tracker for [B]problems & bug reports:[/B] [URL]https://github.com/itsfragilecode/org/issues[/URL] (if you have a GitHub account, otherwise just in this thread I guess).
 
