@@ -22,30 +22,38 @@ All the source code for LineageOS is available in the LineageOS [URL='https://gi
 
 Instructions:
 
-1. Latest download:[/B]
+1. Latest downloads:[/B]
 [URL unfurl="true"]https://sourceforge.net/projects/itsfragilecode/files/android-roms/xiaomi-veux/[/URL]
 [LIST]
 [*]Get latest lineage-*.zip.
-[*]Get latest boot.img if you do not yet have a working recovery.
+[*](Optional) Get latest boot.img if you do not yet have a working recovery.
 [/LIST]
 
 [B]2. Flashing[/B]:
 [LIST]
-[*]Wipe data & factory reset from LineageOS recovery. If you don't have a working custom recovery yet, flash boot.img from our Download section ([I]fastboot flash boot boot.img[/I]) and then reboot into recovery.
-[*]Flash the lineage-*.zip, then MindTheGApps 14 on top if you want to.
+[*](Optional) If you don't have a working custom recovery yet, flash boot.img from our Download section ([I]fastboot flash boot boot.img[/I]) and then reboot into recovery.
+[*]Boot to recovery (e.g. by pressing [I]Power+VolumeUp[/I] while the phone is off or using [I]adb reboot recovery[/I] from a PC)
+[*]Wipe data & factory reset from LineageOS recovery.
+[*]Flash the lineage-*.zipthen MindTheGApps 14 on top if you want to, using [I]adb sideload xxx.zip[/I].
 [*]Restart, wait until it's booted, enjoy.
 [/LIST]
-
-[B]3. Passing SafetyNet/PlayIntegrity[/B]:
+[B]3. (Optional) Passing SafetyNet/PlayIntegrity[/B]:
 [LIST]
 [*]Complete the initial boot.
 [*]Flash [URL='https://topjohnwu.github.io/Magisk/install.html']Magisk[/URL] (27.0 works) apk like an update.zip via recovery.
 [*]Reboot
 [*]Run Magisk app, do full Magisk installation (choose recommended way), follow the reboots until Magisk is fully installed.
-[*]Configure Zygisk, DenyList, Hide Magisk App.
-[*]Download and install PlayIntegrity[B]Fork[/B] Magisk module: [URL]https://github.com/osm0sis/PlayIntegrityFork[/URL]
-[*]Do DenyList setup (look elsewhere what to block; at least e.g. Google Play Services Framework, Google Play, Google Wallet and your problematic apps.
+[*]Configure to enable Zygisk, DenyList, and Hide Magisk App.
+[*]Download and install latest PlayIntegrity[B]Fork[/B] Magisk module: [URL]https://github.com/osm0sis/PlayIntegrityFork[/URL]
+[*]Do DenyList setup (look elsewhere what to block; at least e.g. Google Play Services Framework, Google Play, Google Wallet and your problematic apps).
+[*]You will need an additional module like [URL='https://github.com/daboynb/PlayIntegrityNEXT/tree/main/Fp_Downloader.apk%20to%20use%20with%20play%20integrity%20by%20chiteroman']playcurl[/URL] to regularly switch to a new build fingerprint that isn't banned by Google.
 [/LIST]
+[B]4. Troubleshooting:[/B]
+[LIST]
+[*]Check for updates and latest instructions for this ROM in this thread and at the [URL='https://github.com/itsfragilecode/org/issues']itsfragilecode Issue Tracker[/URL].
+[*][I]For SafetyNet/PlayIntegrity issues:[/I] There are various forks and versions of PlayIntegrity-Fix/Next/Fork and fingerprint updaters. Try another one and follow latest development of these tools.
+[/LIST]
+[B]5. Credits/Source Code/Outro:[/B]
 
 [QUOTE]
 [B]Sources:[/B]
