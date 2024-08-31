@@ -33,8 +33,8 @@ Instructions:
 [LIST]
 [*](Optional) If you don't have a working custom recovery yet, flash boot.img from our Download section ([I]fastboot flash boot boot.img[/I]) and then reboot into recovery.
 [*]Boot to recovery (e.g. by pressing [I]Power+VolumeUp[/I] while the phone is off or using [I]adb reboot recovery[/I] from a PC)
-[*]Wipe data & factory reset from LineageOS recovery.
-[*]Flash the lineage-*.zipthen MindTheGApps 14 on top if you want to, using [I]adb sideload xxx.zip[/I].
+[*]Wipe data & factory reset.
+[*]Flash the lineage-*.zip, then MindTheGApps 14 on top if you want to, using [I]adb sideload xxx.zip[/I].
 [*]Restart, wait until it's booted, enjoy.
 [/LIST]
 [B]3. (Optional) Passing SafetyNet/PlayIntegrity[/B]:
