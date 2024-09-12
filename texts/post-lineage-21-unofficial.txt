@@ -18,7 +18,7 @@ All the source code for LineageOS is available in the LineageOS [URL='https://gi
 *
 */[/CODE]
 
-[B]Current build: [COLOR=rgb(26, 188, 156)]20240829[/COLOR]
+[B]Current build: [COLOR=rgb(26, 188, 156)]20240912[/COLOR]
 
 Instructions:
 
